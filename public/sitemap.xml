@@ -10,4 +10,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/historia-do-bug/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/email-antes-da-web/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/armazenamento-1gb/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/lei-de-moore/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/primeiro-smartphone/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/satelites-e-comunicacao/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/ia-generativa-3-linhas/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/edge-computing-em-casa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/quantum-em-um-minuto/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tech-curiosidades.netlify.app/posts/codigo-aberto-move-a-web/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
