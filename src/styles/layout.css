@@ -36,3 +36,19 @@
 
 /* Section spacing under sticky navbar */
 main .section:first-child { padding-top: 72px; }
+
+/* Back to Top */
+.backtotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #0e141b;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.backtotop:hover { background: #182232; }

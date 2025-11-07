@@ -6,6 +6,7 @@ import ProductList from './components/ProductList.jsx'
 import Posts from './components/Posts.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
+import BackToTop from './components/BackToTop.jsx'
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <BackToTop />
     </div>
   )
 }
