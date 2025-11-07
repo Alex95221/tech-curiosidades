@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { POSTS } from '../data/posts'
 
 function resolveImage(val) {
@@ -13,13 +13,28 @@ function resolveImage(val) {
 }
 
 export default function Posts() {
-  const [page, setPage] = useState(1)
+  const location = useLocation()
+  const navigate = useNavigate()
+  const searchParams = new URLSearchParams(location.search)
+  const initialPage = Math.max(1, parseInt(searchParams.get('p') || '1', 10))
+  const [page, setPage] = useState(initialPage)
   const perPage = 6
   const totalPages = Math.max(1, Math.ceil(POSTS.length / perPage))
 
   useEffect(() => {
     if (page > totalPages) setPage(totalPages)
   }, [totalPages, page])
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const current = Math.max(1, parseInt(params.get('p') || '1', 10))
+    if (current !== page) {
+      params.set('p', String(page))
+      navigate({ pathname: '/', search: `?${params.toString()}` }, { replace: true })
+    }
+    const el = document.getElementById('posts')
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }, [page])
 
   const items = useMemo(() => {
     const start = (page - 1) * perPage
