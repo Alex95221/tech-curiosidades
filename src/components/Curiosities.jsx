@@ -59,7 +59,7 @@ export default function Curiosities() {
       <div className="grid grid--cards">
         {ITEMS.map((item, idx) => (
           <article key={idx} className="card">
-            <img src={resolveImage(item.img)} alt="Imagem ilustrativa" className="card__img" />
+            <img src={resolveImage(item.img)} alt={item.title} className="card__img" />
             <div className="card__body">
               <h3 className="card__title">{item.title}</h3>
               <p className="card__text">{item.text}</p>
