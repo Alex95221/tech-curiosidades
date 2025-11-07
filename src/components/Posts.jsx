@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { POSTS } from '../data/posts'
 
@@ -13,11 +13,27 @@ function resolveImage(val) {
 }
 
 export default function Posts() {
+  const [page, setPage] = useState(1)
+  const perPage = 6
+  const totalPages = Math.max(1, Math.ceil(POSTS.length / perPage))
+
+  useEffect(() => {
+    if (page > totalPages) setPage(totalPages)
+  }, [totalPages, page])
+
+  const items = useMemo(() => {
+    const start = (page - 1) * perPage
+    return POSTS.slice(start, start + perPage)
+  }, [page])
+
+  const next = () => setPage((p) => Math.min(totalPages, p + 1))
+  const prev = () => setPage((p) => Math.max(1, p - 1))
+
   return (
     <div className="container section__inner">
       <h2 className="section__title">Posts recentes</h2>
       <div className="grid grid--cards">
-        {POSTS.map((p) => (
+        {items.map((p) => (
           <article key={p.id} className="card">
             {resolveImage(p.img) && (
               <img src={resolveImage(p.img)} alt={p.title} className="card__img" />
@@ -35,6 +51,11 @@ export default function Posts() {
             </div>
           </article>
         ))}
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, justifyContent: 'center', marginTop: 12 }}>
+        <button className="button" onClick={prev} disabled={page === 1}>Anterior</button>
+        <span className="muted">Página {page} de {totalPages}</span>
+        <button className="button" onClick={next} disabled={page === totalPages}>Próximo</button>
       </div>
     </div>
   )
