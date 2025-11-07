@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Curiosities from './components/Curiosities.jsx'
 import ProductList from './components/ProductList.jsx'
+import Posts from './components/Posts.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 
@@ -16,6 +17,9 @@ export default function App() {
         </section>
         <section id="curiosities" className="section">
           <Curiosities />
+        </section>
+        <section id="posts" className="section">
+          <Posts />
         </section>
         <section id="products" className="section">
           <ProductList />

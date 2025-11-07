@@ -1,0 +1,42 @@
+export const POSTS = [
+  {
+    id: 'historia-do-bug',
+    title: 'A história do primeiro “bug”',
+    date: '2025-01-01',
+    excerpt: 'Em 1947, um inseto real encontrado no Mark II inspirou o termo que usamos até hoje.',
+    img: 'curiosity-ai.svg',
+    tags: ['história', 'computação'],
+  },
+  {
+    id: 'email-antes-da-web',
+    title: 'O e-mail chegou antes da web',
+    date: '2025-01-03',
+    excerpt: 'O e-mail surgiu nos anos 1970, enquanto a web só apareceu publicamente em 1991.',
+    img: 'curiosity-email.svg',
+    tags: ['internet', 'história'],
+  },
+  {
+    id: 'armazenamento-1gb',
+    title: 'Quando 1 GB era gigante',
+    date: '2025-01-05',
+    excerpt: 'Em 1980, 1 GB exigia um disco pesado e caro; hoje, cabe no bolso.',
+    img: 'curiosity-storage.svg',
+    tags: ['hardware', 'armazenamento'],
+  },
+  {
+    id: 'lei-de-moore',
+    title: 'Lei de Moore em poucas linhas',
+    date: '2025-01-07',
+    excerpt: 'A cada ~2 anos, chips dobravam a capacidade — base da evolução rápida da computação.',
+    img: 'curiosity-moore.svg',
+    tags: ['chips', 'tendências'],
+  },
+  {
+    id: 'primeiro-smartphone',
+    title: 'IBM Simon: o primeiro smartphone',
+    date: '2025-01-10',
+    excerpt: 'Lançado em 1994 com tela sensível ao toque, e-mail e apps simples.',
+    img: 'curiosity-smartphone.svg',
+    tags: ['mobile', 'história'],
+  },
+]

@@ -8,6 +8,7 @@ export default function Navbar() {
         <nav className="nav">
           <a className="nav__link" href="#home">Início</a>
           <a className="nav__link" href="#about">Sobre</a>
+          <a className="nav__link" href="#posts">Posts</a>
           <a className="nav__link" href="#products">Produtos</a>
           <a className="nav__link" href="#contact">Contato</a>
         </nav>
