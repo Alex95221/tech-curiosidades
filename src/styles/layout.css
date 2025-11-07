@@ -1,0 +1,38 @@
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(140%) blur(10px);
+  background: rgba(11, 15, 20, 0.65);
+  border-bottom: 1px solid var(--border);
+}
+.navbar__inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-weight: 700; color: var(--text); text-decoration: none; }
+.nav { display: flex; gap: 16px; }
+.nav__link { color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 8px; }
+.nav__link:hover { background: rgba(255,255,255,0.03); color: var(--text); }
+
+/* Hero */
+.hero { padding: 48px 0; display: grid; gap: 16px; }
+.hero__actions { margin-top: 12px; }
+
+/* Filters */
+.filters { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.select-group { display: flex; gap: 8px; }
+.chip {
+  background: #0e141b;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+.chip--active { color: white; background: #182232; border-color: #273248; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding: 28px 0; background: #090d12; }
+.footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.footer__social { display: flex; gap: 12px; }
+
+/* Section spacing under sticky navbar */
+main .section:first-child { padding-top: 72px; }
