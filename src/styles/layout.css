@@ -60,7 +60,6 @@ main .section:first-child { padding-top: 72px; }
 }
 .card--reveal { opacity: 0; animation: fadeUp .6s ease forwards; }
 
-.curiosities-track { /* desktop/tablet mantém grid padrão */ }
 @media (max-width: 640px) {
   .curiosities-track { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 4px; }
   .curiosities-track .card { min-width: 85%; scroll-snap-align: start; }
