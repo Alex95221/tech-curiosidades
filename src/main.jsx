@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/post/:id" element={<PostPage />} />
+        <Route path="*" element={<App />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
