@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { POSTS } from '../data/posts'
 
 function resolveImage(val) {
@@ -29,6 +30,7 @@ export default function Posts() {
                 {p.tags?.map((t) => (
                   <span key={t} className="chip">#{t}</span>
                 ))}
+                <Link className="button button--secondary" to={`/post/${p.id}`}>Ler mais</Link>
               </div>
             </div>
           </article>
