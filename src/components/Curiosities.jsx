@@ -31,6 +31,36 @@ const ITEMS = [
     text: 'Milhares de satélites em órbita viabilizam GPS, internet e comunicações globais.',
     img: 'curiosity-satellite.svg',
   },
+  {
+    title: 'Senha mais usada do mundo',
+    text: '“123456” segue no topo de senhas fracas — sempre use gerenciadores e 2FA.',
+    img: 'curiosity-ai.svg',
+  },
+  {
+    title: 'O primeiro site da história',
+    text: 'Em 1991, o CERN publicou a primeira página da web explicando o próprio projeto.',
+    img: 'curiosity-email.svg',
+  },
+  {
+    title: 'Containers ganharam o mundo',
+    text: 'Docker popularizou microserviços e portabilidade com imagens leves e isoladas.',
+    img: 'curiosity-storage.svg',
+  },
+  {
+    title: 'Bluetooth tem nome viking',
+    text: 'Homenagem a Harald “Bluetooth” Gormsson, rei que unificou tribos na Dinamarca.',
+    img: 'curiosity-moore.svg',
+  },
+  {
+    title: 'Primeiro upload do YouTube',
+    text: '“Me at the zoo”, 2005, foi o primeiro vídeo publicado na plataforma.',
+    img: 'curiosity-smartphone.svg',
+  },
+  {
+    title: 'Emoji nasceu no Japão',
+    text: 'Criados nos anos 1990, os primeiros emojis tinham 12×12 pixels e eram monocromáticos.',
+    img: 'curiosity-satellite.svg',
+  },
 ]
 
 export default function Curiosities() {
