@@ -86,9 +86,9 @@ export default function Curiosities() {
   return (
     <div className="container section__inner">
       <h2 className="section__title">Curiosidades Tech</h2>
-      <div className="grid grid--cards">
+      <div className="grid grid--cards curiosities-track">
         {ITEMS.map((item, idx) => (
-          <article key={idx} className="card">
+          <article key={idx} className="card card--reveal">
             <img src={resolveImage(item.img)} alt={item.title} className="card__img" />
             <div className="card__body">
               <h3 className="card__title">{item.title}</h3>
