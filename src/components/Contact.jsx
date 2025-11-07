@@ -25,11 +25,11 @@ export default function Contact() {
       body,
     })
       .then(() => {
-        alert('Mensagem enviada!')
         setName('')
         setEmail('')
         setMessage('')
         setBotField('')
+        window.location.assign('/thanks')
       })
       .catch(() => alert('Falha ao enviar. Tente novamente.'))
   }
@@ -63,6 +63,7 @@ export default function Contact() {
           <label className="label" htmlFor="message">Mensagem</label>
           <textarea id="message" name="message" className="input input--textarea" rows="5" value={message} onChange={(e) => setMessage(e.target.value)} required />
         </div>
+        <div data-netlify-recaptcha="true" style={{ marginBottom: 12 }}></div>
         <button type="submit" className="button button--primary">Enviar</button>
       </form>
     </div>
